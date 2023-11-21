@@ -29,7 +29,7 @@ class S5131 extends StatelessWidget {
           style: GoogleFonts.roboto(
               textStyle: const TextStyle(
                   fontSize: 20,
-                  color: Colors.amber,
+                  color: Colors.black,
                   fontWeight: FontWeight.w300,
                   backgroundColor: Color.fromARGB(255, 255, 231, 238))),
         ),

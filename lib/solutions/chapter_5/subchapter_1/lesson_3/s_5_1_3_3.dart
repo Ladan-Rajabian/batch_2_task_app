@@ -5,22 +5,22 @@ class S5133 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(10),
+      padding:const EdgeInsets.all(10),
       height: 150,
       width: 200,
-      decoration: const BoxDecoration(
-        borderRadius: BorderRadius.all(Radius.circular(10)),
-        color: Colors.grey,
+      decoration: BoxDecoration(
+        borderRadius: const BorderRadius.all(Radius.circular(10)),
+        color:const Color.fromARGB(255, 174, 142, 222),
         boxShadow: [
           BoxShadow(
-            color: Color.fromARGB(255, 188, 34, 34),
-
+            color: const Color.fromARGB(255, 41, 7, 214).withOpacity(0.3),
             blurRadius: 2,
-            offset: Offset(4, 8), // changes position of shadow
+            offset: const Offset(-8, 10),
+            //spreadRadius: 8, // changes position of shadow
           ),
         ],
       ),
-      child: const Center(child: Text('Hello')),
+      child: const Center(child: Text('Hello world')),
     );
   }
 }

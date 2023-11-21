@@ -28,10 +28,43 @@ class _MyExampleBoxState extends State<MyExampleBox> {
           });
         },
         child: Text(
-          "Zwischen zwei Zwetschgenzweigen zwitschern zwei zutrauliche Schwalben, zwei zutrauliche Schwalben zwitschern zwischen zwei Zwetschgenzweigen.",
-          overflow: isExpanded ? TextOverflow.visible : TextOverflow.ellipsis,
+          "here is a test text and sized box, it must be change on click! the test is successfull!!",
+          overflow: isExpanded ? TextOverflow.visible : TextOverflow.fade,
         ),
       ),
     );
   }
 }
+
+
+
+/* class MyExampleBox extends StatefulWidget {
+  const MyExampleBox({super.key});
+  @override
+  State<MyExampleBox> createState() => _MyExampleBoxState();
+}
+class _MyExampleBoxState extends State<MyExampleBox> {
+  double boxHeight = 30;
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 200,
+      height: boxHeight,
+      child: GestureDetector(
+        onTap: () {
+          setState(() {
+            boxHeight = boxHeight == 30.0 ? 200.0 : 30.0;
+          });
+        },
+        child: const Text(
+          "here is a test text and sized box, it must be change on click! the test is successfull!!",
+          style: TextStyle(
+            fontSize: 18,
+            color: Colors.black,
+          ),
+          overflow: TextOverflow.fade,
+        ),
+      ),
+    );
+  }
+} */
