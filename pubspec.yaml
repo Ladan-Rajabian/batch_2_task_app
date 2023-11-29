@@ -17,6 +17,7 @@ dependencies:
   http: ^1.1.0
   image_picker: ^1.0.4
   json_annotation: ^4.8.0
+  percent_indicator: ^4.2.3
   shimmer: ^3.0.0
 dev_dependencies:
   flutter_test:
